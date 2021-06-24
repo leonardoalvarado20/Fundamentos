@@ -1,0 +1,17 @@
+-Hola querido Usuario le presento mi programa “Operaciones Básica Matriz” que permite hacer:
+
+[Mostrar Elementos Matriz - Sumar 2 Matriz – Restar 2 Matriz – Multiplicar 2 Matriz - Dividir 2 Matriz]
+
+Paso 1 Ejecutar el Programa de  C++
+
+Paso 2 Le pide al Usuario que digite un número del 1 al 5 
+
+Paso 3 Elige el tipo de Operación quieres realizar
+
+•	Si ingresa 1 le “Mostrar Elementos Matriz determinado.”
+•	Si ingresa 2 le pedirá al usuario que “Llene la matriz 1 y matriz 2 para realizar la Operación de la Suma.”
+•	Si ingresa 3 le pedirá al usuario que “Llene la matriz 1 y matriz 2 para realizar la Operación de la Resta.”
+•	Si ingresa 4 le pedirá al usuario que “Llene la matriz 1 y matriz 2 para realizar la Operación de la Multiplicación.”
+•	Si ingresa 5 le pedirá al usuario que “Llene la matriz 1 y matriz 2 para realizar la Operación de la División.”
+
+Gracias, por probar mi programa ☺

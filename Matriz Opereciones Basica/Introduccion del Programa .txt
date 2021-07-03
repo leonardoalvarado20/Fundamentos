@@ -1,17 +1,31 @@
--Hola querido Usuario le presento mi programa “Operaciones Básica Matriz” que permite hacer:
+==============================================================================================================================================================
+-Hola querido Usuario le presento mi programa mi propósito era crear una interfase para poder agregar cada mejora de mi programa e implementar el desarrollo.
+==============================================================================================================================================================
+Explicación:
+1.En primer punto mi programa tiene un menú principal para elegir el tipo de actividad quiera realizar.
+A) OPCION 1.- Actividad B2-1: OPERACIONES CON MATRICES
+B) OPCION 2.- Actividad C2-1: OPERACIONES CON MATRICES EN 2 DIMENSIONES
+C) OPCION 3.-Salir
 
-[Mostrar Elementos Matriz - Sumar 2 Matriz – Restar 2 Matriz – Multiplicar 2 Matriz - Dividir 2 Matriz]
+2.En segundo punto tenemos la Actividad B2-1: OPERACIONES CON MATRICES fue el primer prototipo de mi programa de matrices y que tiene esa opción:
+    1) OPCION. - 1 MOSTRAR ELEMENTOS DE LA MATRIZ
+    2) OPCION. - 2 SUMAR DOS MATRIZ.
+    3) OPCION. - 3 RESTA DOS MATRIZ.
+    4) OPCION. - 4 MULTIPLICAR DOS MATRIZ.
+    5) OPCION. - 5 DIVIDIR DOS MATRIZ.
+    6) OPCION. - 6 Salir.
+    
+3.En tercer punto tenemos la Actividad C2-1: OPERACIONES CON MATRICES EN 2 DIMENSIONES fue el último trabajo que realizado en esta fecha y que tiene esa opción:
+    1) OPCION 1.- Ingresar los valores de las matrices.
+    2) OPCION 2.- Obtener el producto de las dos matrices.
+    3) OPCION 3.- Mostrar las potencias 2 de la primera matriz.
+    4) OPCION 4.- Mostrar la transpuesta de la primera matriz.
+     5) OPCION 5.- Calcular la media y varianza y compararlas.
+     6) OPCION. - 6 Salir.
 
-Paso 1 Ejecutar el Programa de  C++
+   ==================================
+      Experiencia del Programador:
 
-Paso 2 Le pide al Usuario que digite un número del 1 al 5 
-
-Paso 3 Elige el tipo de Operación quieres realizar
-
-•	Si ingresa 1 le “Mostrar Elementos Matriz determinado.”
-•	Si ingresa 2 le pedirá al usuario que “Llene la matriz 1 y matriz 2 para realizar la Operación de la Suma.”
-•	Si ingresa 3 le pedirá al usuario que “Llene la matriz 1 y matriz 2 para realizar la Operación de la Resta.”
-•	Si ingresa 4 le pedirá al usuario que “Llene la matriz 1 y matriz 2 para realizar la Operación de la Multiplicación.”
-•	Si ingresa 5 le pedirá al usuario que “Llene la matriz 1 y matriz 2 para realizar la Operación de la División.”
-
-Gracias, por probar mi programa ☺
+Hola mi nombre es Leonardo David Alvarado Cornejo , mi experiencia en programar en C++ a sido muy grande fueron días mucho esfuerzo y dedicación buscando información en foros, en los mismo ejercicio matemático y mucha practica y ir mejorando cada vez mas.
+  
+   Gracias, por probar mi programa ☺

@@ -4,7 +4,7 @@ using namespace std;
  //FUCION PRINCIPAL
   int main(){ 			   			   
 			   
-	cout<<"\t\t\t\t  //===================================================//"<<endl;
+    cout<<"\t\t\t\t  //===================================================//"<<endl;
     cout<<"\t\t\t\t  //           PROGRAMA: OPERACIONES BASICAS           //"<<endl;
     cout<<"\t\t\t\t  //      AUTOR : Leonardo David Alvarado Cornejo      //"<<endl;
     cout<<"\t\t\t\t  //                    VESION: 2.0                    //"<<endl;
@@ -32,7 +32,7 @@ using namespace std;
 	      int op;
 	      while(op !=6){
 		    cout<<"\n\n";
-	        cout<<"\t\t\t  //============================================================//"<<endl;
+	            cout<<"\t\t\t  //============================================================//"<<endl;
 		    cout<<"\t\t\t  //        1) OPCION.- 1 MOSTRAR ELEMENTOS DE LA MATRIZ        //"<<endl;
 		    cout<<"\t\t\t  //        2) OPCION.- 2 SUMAR DOS MATRIZ                      //"<<endl;   
 		    cout<<"\t\t\t  //        3) OPCION.- 3 RESTA DOS MATRIZ                      //"<<endl;

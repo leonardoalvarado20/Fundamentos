@@ -4,7 +4,7 @@ using namespace std;
  //FUCION PRINCIPAL
   int main(){ 			   			   
 			   
-	cout<<"\t\t\t\t  //===================================================//"<<endl;
+    cout<<"\t\t\t\t  //===================================================//"<<endl;
     cout<<"\t\t\t\t  //           PROGRAMA: OPERACIONES BASICAS           //"<<endl;
     cout<<"\t\t\t\t  //      AUTOR : Leonardo David Alvarado Cornejo      //"<<endl;
     cout<<"\t\t\t\t  //                    VESION: 2.0                    //"<<endl;

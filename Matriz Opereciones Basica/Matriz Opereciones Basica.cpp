@@ -32,7 +32,7 @@ using namespace std;
 	      int op;
 	      while(op !=6){
 		    cout<<"\n\n";
-	        cout<<"\t\t\t  //============================================================//"<<endl;
+	            cout<<"\t\t\t  //============================================================//"<<endl;
 		    cout<<"\t\t\t  //        1) OPCION.- 1 MOSTRAR ELEMENTOS DE LA MATRIZ        //"<<endl;
 		    cout<<"\t\t\t  //        2) OPCION.- 2 SUMAR DOS MATRIZ                      //"<<endl;   
 		    cout<<"\t\t\t  //        3) OPCION.- 3 RESTA DOS MATRIZ                      //"<<endl;
@@ -401,7 +401,7 @@ using namespace std;
 	      int op;
 	      while(op !=6){
 		    cout<<"\n\n";
-	       cout<<"*******************************************"<<endl;
+	           cout<<"*******************************************"<<endl;
 		   cout<<" 1) OPCION 1.- Ingresar los valores de las matrices"<<endl;
 		   cout<<" 2) OPCION 2.- Obtener el producto de las dos matrices"<<endl;
 		   cout<<" 3) OPCION 3.- Mostrar la potencias 2 de la primera matriz"<<endl;

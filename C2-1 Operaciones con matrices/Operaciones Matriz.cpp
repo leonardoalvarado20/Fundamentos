@@ -250,7 +250,46 @@ int main(){
 			case 4:
 				//clrscr
 				system("cls");
+              void pedirDatos();              
+              void mostrarMatriz();  
+			    		         			     
+		      int transpuesta();
+		      {
+		      	float A[5][5]; 
+		      	cout<<"\n\nFUNCION CALCULA LA TRANSPUESTA DE LA PRIMERA MATRIZ 5X5 \n\n";
+                   void pedirDatos();{
+                     for(int i=0;i<5;i++){               
+                         for(int j=0;j<5;j++){                              
+                             cout<<" Ingrese valor para A["<<i<<"]["<<j<<"]: ";
+                             cin>>*(*(A+i)+j);                
+				         }
+				         cout<<"\n\n"; 
+                     }      			            
+ 
+		           }
+                   cout<<"\n\n"; 
+                   system("pause");
+                   system("cls");  
+				   void mostrarMatriz();{                          
+    	           cout<<"\nImprimiendo matriz Original: \n\n";
+	               for(int i=0;i<5;i++){
+		               for(int j=0;j<5;j++){		                	                
+						   cout<<*(*(A+i)+j)<<"  "; //puntero de_matriz[i][j]
+	                   }
+	                   cout<<"\n\n";            
+                   }                
+                   cout<<"\n\n";                
+	               cout<<"Imprimiendo matriz Transpuesta : \n\n";
+	               for(int i=0;i<5;i++){
+		               for(int j=0;j<5;j++){
+		                   cout<<*(*(A+j)+i)<<"  "; //puntero de_matriz[i][j]
+	                   }
+	                   cout<<"\n\n";
+                   }    			   	
+			       }
 
+		        return 0;
+	          }
 				system("pause");
 			    system("cls");
 		        break;		    

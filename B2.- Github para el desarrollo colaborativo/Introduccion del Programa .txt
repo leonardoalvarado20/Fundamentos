@@ -1,0 +1,20 @@
+==============================================================================================================================================================
+-Hola querido Usuario le presento mi programa mi propósito era crear una interfase para poder agregar cada mejora de mi programa e implementar el desarrollo.
+==============================================================================================================================================================
+Explicación:
+
+1.En primer punto tenemos la Actividad B2-1: OPERACIONES CON MATRICES fue el primer prototipo de mi programa de matrices y que tiene esa opción:
+
+    1) OPCION. - 1 MOSTRAR ELEMENTOS DE LA MATRIZ
+    2) OPCION. - 2 SUMAR DOS MATRIZ.
+    3) OPCION. - 3 RESTA DOS MATRIZ.
+    4) OPCION. - 4 MULTIPLICAR DOS MATRIZ.
+    5) OPCION. - 5 DIVIDIR DOS MATRIZ.
+    6) OPCION. - 6 Salir.
+    
+   ==================================
+      Experiencia del Programador:
+
+Hola mi nombre es Leonardo David Alvarado Cornejo , mi experiencia en programar en C++ a sido muy grande fueron días mucho esfuerzo y dedicación buscando información en foros, en los mismo ejercicio matemático y mucha practica y ir mejorando cada vez mas.
+  
+   Gracias, por probar mi programa ☺

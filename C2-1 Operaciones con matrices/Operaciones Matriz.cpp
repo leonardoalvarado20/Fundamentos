@@ -102,7 +102,80 @@ int main(){
 			case 2:
 				//clrscr
 				system("cls");
-
+				
+				void pedirDatos();
+				void mostrarMatriz();
+				float A[5][5], B[5][5], C[5][5];
+				int producto();{
+					cout<<"\n\nFUNCION PERMITE CALCULAR EL PRODUCTO ENTRE DOS MATRICES  5x5 \n\n";
+					void pedirDatos();{
+						for(int i=0;i<5;i++){
+							for(int j=0;j<5;j++){
+								cout<<" Ingrese valor para A["<<i<<"]["<<j<<"]: ";
+								cin>>*(*(A+i)+j);
+							}
+							cout<<"\n\n";
+						}
+						cout<<"\n\n";
+						system("pause");
+						system("cls");
+						for(int i=0;i<5;i++){
+							for(int j=0;j<5;j++){
+								cout<<" Ingrese valor para B["<<i<<"]["<<j<<"]: ";
+								cin>>*(*(B+i)+j);
+							}
+							cout<<"\n\n";							
+						}
+					}
+					cout<<"\n\n*************************************\n\n";
+					cout<<"  La Multiplicacion de las dos Matrices ";
+					cout<<"\n\n*************************************\n\n";
+					// Inicializamos la matriz C.
+					for(int i=0;i<5;i++){
+						for(int j=0; j<5; ++j){
+							*(*(C+i)+j) = 0;
+						}
+					}
+					// Generamos la matriz C.
+					for(int i=0;i<5;i++){
+						for(int j=0;j<5;j++){
+							for(int z=0;z<5;z++){
+								*(*(C+i)+j) += *(*(A+i)+z) * *(*(B+z)+j);
+							}
+						}
+					}
+					cout<<"\n\n";	
+					system("pause");
+					system("cls");
+					cout<<"\nImprimiendo matriz 1: \n\n";
+					for(int i=0;i<5;i++){
+						for(int j=0;j<5;j++){
+							cout<<*(*(A+i)+j)<<"  "; //puntero de_matriz[i][j]
+						}
+						cout<<"\n\n";
+					}
+					cout<<"\n\n";	
+					system("pause");
+					system("cls");
+					cout<<"\nImprimiendo matriz 2: \n\n";
+					for(int i=0;i<5;i++){
+						for(int j=0;j<5;j++){
+							cout<<*(*(B+i)+j)<<"  "; //puntero de_matriz[i][j]
+						}
+						cout<<"\n\n";
+					}
+					cout<<"\n\n";	
+					system("pause");
+					system("cls");
+					cout<<"\nImprimiendo matriz 3: \n\n";
+					for(int i=0;i<5;i++){
+						for(int j=0;j<5;j++){
+							cout<<*(*(C+i)+j)<<"  "; //puntero de_matriz[i][j]
+						}
+						cout<<"\n\n";
+					}					
+																
+				}
 				system("pause");
 			    system("cls");
 		        break;

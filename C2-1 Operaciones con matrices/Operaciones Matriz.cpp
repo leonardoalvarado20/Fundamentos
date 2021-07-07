@@ -297,7 +297,94 @@ int main(){
 			case 5:
 				//clrscr
 				system("cls");
-
+              //Prototipo de funcion
+              void pedirDatos();
+              void mostrarMatriz(float **,float **,float,float);
+              
+              int calcular();{
+              	float x,a=0,a1=0,m,v,a2=0,a3=0,m1,v1;
+              void pedirDatos();{
+	            //Reservar memoria para la matriz 1
+	            mat1 = new float*[5]; //Reservando memoria para las mmemoria de filas
+	            for(int i=0;i<5;i++){
+		            mat1[i] = new float[5]; //Reservando memoria para las memoria de columnas 
+	            }
+	            cout<<"\n\nDigitando elementos de la matriz 1: \n\n";
+	            for(int i=0;i<5;i++){
+		            for(int j=0;j<5;j++){
+			            cout<<"Digite un numero ["<<i<<"]["<<j<<"]: ";
+			            cin>>*(*(mat1+i)+j); //puntero de_matriz[i][j]
+			            a=a+*(*(mat1+i)+j);
+		            }
+	            }
+                cout<<"\n\n"; 
+                system("pause");
+                system("cls");  
+                cout<<"\n\n";
+	            //Reservar memoria para la matriz 2 
+	            mat2 = new float*[5]; //Reservando memoria para las mmemoria de filas
+	            for(int i=0;i<5;i++){
+		            mat2[i] = new float[5]; //Reservando memoria para las memoria de columnas 
+	            }
+	            cout<<"\n\nDigitando elementos de la matriz 2: \n\n";
+	            for(int i=0;i<5;i++){
+		            for(int j=0;j<5;j++){
+			            cout<<"Digite un numero ["<<i<<"]["<<j<<"]: ";
+			            cin>>*(*(mat2+i)+j); //puntero de_matriz[i][j]
+			            a2=a2+*(*(mat2+i)+j);
+		            }
+	            }
+               cout<<"\n\n"; 	            
+	
+              } 
+          
+                m=a/25;
+	            for(int i=0;i<5;i++){
+		            for(int j=0;j<5;j++){              
+                         a1=a1+(*(*(mat1+i)+j)-m)*(*(*(mat1+i)+j)-m);
+                       
+                    }
+                }  
+                cout<<"\n\n"; 
+                system("pause");
+                system("cls");  
+                cout<<"\n\n";     				              
+                v=a1/25;
+                cout<<"\n\n La media de la Matriz 1 es "<<m<<"\n\n La varianza de la Matriz 1 es  "<<v<<endl;
+                m1=a2/25;
+	            for(int i=0;i<5;i++){
+		            for(int j=0;j<5;j++){              
+                         a3=a3+(*(*(mat2+i)+j)-m)*(*(*(mat2+i)+j)-m);
+                       
+                    }
+                }                
+                v1=a3/25;                
+                cout<<"\n\n La media de la Matriz 2 es "<<m1<<"\n\n La varianza de la Matriz 2 es  "<<v1<<endl;
+                cout<<"\n\n"; 
+                system("pause");
+                system("cls");  
+                cout<<"\n\n";                
+                if(m==m1){
+                	cout<<"\n\n Ambos valores son iguales\n\n";
+                }
+                else if(m>m1){
+                	cout<<"\n\n El mayor de la media es : \n\n"<<m;
+                }
+                else{
+                	cout<<"\n\n El mayor de la media es : \n\n"<<m1;
+                }
+                
+                if(v==v1){
+                	cout<<"\n\nAmbos valores son iguales\n\n";
+                }
+                else if(v>v1){
+                	cout<<"\n\nEl mayor de la varianza es : \n\n"<<v;
+                }
+                else{
+                	cout<<"\n\nEl mayor de la varianza es : \n\n"<<v1;
+                }    
+			       cout<<"\n\n";	                                                
+               }
 				system("pause");
 			    system("cls");
 		        break;		        
@@ -309,8 +396,7 @@ int main(){
                 		cout<<"\n\n";
 						system("pause");
 					    system("cls");
-				    }
-			
+				    }			
 		}
 			
 	}

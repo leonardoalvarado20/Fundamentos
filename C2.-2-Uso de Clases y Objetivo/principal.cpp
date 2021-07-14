@@ -1,5 +1,6 @@
 #include<iostream>
-#include<cstdlib>
+#include<stdlib.h>
+#include<fstream>
 using namespace std;
 //FUCION PRINCIPAL
 
@@ -34,11 +35,11 @@ void Persona::leer(){
 
     cout<<"\n\n"; 
     cout<<"\t\t\t\t\t //========================================//"<<endl; 
-	cout<<"\t\t\t\t\t          1.Cedula          :  "<<0<<cedula<<"\n";         
-    cout<<"\t\t\t\t\t          2.Nombre          :  "<<nombre<<"\n";    
-	cout<<"\t\t\t\t\t          3.F_Nacimiento    :  "<<dn<<"/"<<mn<<"/"<<an<<"\n"; 
-	cout<<"\t\t\t\t\t          4.Peso            :  "<<peso<<"(Kg)"<<"\n";          
-	cout<<"\t\t\t\t\t          4.Estatura        :  "<<altura<<"(Mt)"<<"\n"; 
+	cout<<"\t\t\t\t\t          1.Cedula             :  "<<0<<cedula<<"\n";         
+    cout<<"\t\t\t\t\t          2.Nombre             :  "<<nombre<<"\n";    
+	cout<<"\t\t\t\t\t          3.Fecha Nacimiento   :  "<<dn<<"/"<<mn<<"/"<<an<<"\n"; 
+	cout<<"\t\t\t\t\t          4.Peso               :  "<<peso<<"(Kg)"<<"\n";          
+	cout<<"\t\t\t\t\t          4.Estatura           :  "<<altura<<"(Mt)"<<"\n"; 
     cout<<"\t\t\t\t\t //========================================//"<<endl;
     cout<<"\n";    	
  
@@ -78,7 +79,7 @@ int main(){
 		
                  int perona();{
                     cout<<"\t\t\t\t\t //==============================================//"<<endl; 
-                 	cout<<"\t\t\t\t\t //        1.Ingrese su cedula           :       //"<<endl;                        	
+                 	cout<<"\t\t\t\t\t //        1.Ingrese su Cedula           :       //"<<endl;                        	
                  	cout<<"\t\t\t\t\t //        2.Ingrese su Nombre           :       //"<<endl;
 					cout<<"\t\t\t\t\t //        3.Ingrese su Fecha Nacimineto :       //"<<endl;
 					cout<<"\t\t\t\t\t //        4.Ingrese su Peso (Kg)        :       //"<<endl;
@@ -124,7 +125,27 @@ int main(){
 			case 4:
 				//clrscr
 				system("cls");
+                void escribir();
 
+                int guardar();{
+                  void escribir();{
+	                ofstream archivo;
+	
+	                archivo.open("Archivo.txt",ios::out); //Abriendo el archivo
+	
+	                if(archivo.fail()){
+		               cout<<"No se pudo abrir el archivo";
+		               exit(1);
+	                }
+	
+	                archivo<<"Cedula : "<<0<<cedula<<"\n";  
+	                archivo<<"Nombre : "<<nombre<<"\n";  
+					archivo<<"Fecha Nacimiento : "<<dn<<"/"<<mn<<"/"<<an<<"\n";  
+					archivo<<"Peso : "<<peso<<"(Kg)"<<"\n";
+					archivo<<"Estatura : "<<altura<<"(Mt)"<<"\n";    					       	                
+	                archivo.close(); //Cerrar el archivo
+                  }	               	
+                }
 				system("pause");
 			    system("cls");
 		        break;		    
@@ -132,7 +153,28 @@ int main(){
 			case 5:
 				//clrscr
 				system("cls");
+                void lectura();
 
+                int recuperar();{
+                  void lectura();{
+	                ifstream archivo;
+	                string texto;
+	                
+	                archivo.open("Archivo.txt",ios::in); //Abriendo el archivo modo lectura
+	
+	                if(archivo.fail()){
+		               cout<<"No se pudo abrir el archivo";
+		               exit(1);
+	                }
+	                
+	                while(!archivo.eof()){  //mientras no sea el final del archivo	
+	                	getline(archivo,texto);
+	                	cout<<texto<<endl;	
+									               	                	
+	                }	                
+	                	archivo.close(); // Cerramos el archivo	                
+                  }	               	
+                }
 				system("pause");
 			    system("cls");
 		        break;		        

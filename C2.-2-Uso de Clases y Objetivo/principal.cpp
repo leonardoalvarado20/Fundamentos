@@ -35,11 +35,11 @@ void Persona::leer(){
 
     cout<<"\n\n"; 
     cout<<"\t\t\t\t\t //========================================//"<<endl; 
-	cout<<"\t\t\t\t\t          1.Cedula             :  "<<0<<cedula<<"\n";         
-    cout<<"\t\t\t\t\t          2.Nombre             :  "<<nombre<<"\n";    
-	cout<<"\t\t\t\t\t          3.Fecha Nacimiento   :  "<<dn<<"/"<<mn<<"/"<<an<<"\n"; 
-	cout<<"\t\t\t\t\t          4.Peso               :  "<<peso<<"(Kg)"<<"\n";          
-	cout<<"\t\t\t\t\t          4.Estatura           :  "<<altura<<"(Mt)"<<"\n"; 
+	cout<<"\t\t\t\t\t      1.Cedula             :  "<<0<<cedula<<"\n";         
+    cout<<"\t\t\t\t\t      2.Nombre             :  "<<nombre<<"\n";    
+	cout<<"\t\t\t\t\t      3.Fecha Nacimiento   :  "<<dn<<"/"<<mn<<"/"<<an<<"\n"; 
+	cout<<"\t\t\t\t\t      4.Peso               :  "<<peso<<"(Kg)"<<"\n";          
+	cout<<"\t\t\t\t\t      5.Estatura           :  "<<altura<<"(Mt)"<<"\n"; 
     cout<<"\t\t\t\t\t //========================================//"<<endl;
     cout<<"\n";    	
  
@@ -47,7 +47,7 @@ void Persona::leer(){
 
 int cedula;
 string nombre;
-int an,mn,dn;
+int aa,ma,da,an,mn,dn,a,m,d;
 float peso;
 float altura;
 
@@ -109,7 +109,56 @@ int main(){
 			case 2:
 				//clrscr
 				system("cls");
+				int edadd();{
+				
+					cout<<"\n";
+					cout<<"\t\t\t\t         //======================================//"<<endl; 
+ 	                cout<<"\t\t\t\t         //           La Fecha Nacimiento        //"<<endl;
+ 	                cout<<"\t\t\t\t         //======================================//"<<endl;
+ 	                cout<<"\n";
+ 	                cout<<"\t\t\t - Dia: "<<dn;
+ 	                cout<<"\n\n";
+ 	                cout<<"\t\t\t - Mes: "<<mn;
+ 	                cout<<"\n\n";
+ 	                cout<<"\t\t\t - Anios: "<<an;
+              		cout<<"\n";
+					  		
+					cout<<"\n";
+					cout<<"\t\t\t\t      //============================================//"<<endl; 
+ 	                cout<<"\t\t\t\t      //           Ingrese la Fecha Actual          //"<<endl;
+ 	                cout<<"\t\t\t\t      //============================================//"<<endl;
+ 	                cout<<"\n";
+ 	                cout<<"\t\t\t - Dia: ";cin>>da;
+ 	                cout<<"\n";
+ 	                cout<<"\t\t\t - Mes: ";cin>>ma;
+ 	                cout<<"\n";
+                    cout<<"\t\t\t - Anios: ";cin>>aa;
+                    cout<<"\n";
 
+ 	                if(da>dn){
+ 		               d=da-dn;
+ 	                 }
+					 else
+					 {
+	 	               da=da+31;
+ 		               ma=ma-1;
+ 		               d=da-dn;
+ 	                 }
+
+	                 if(ma>mn){
+ 		                m=ma-mn;
+ 	                 }
+					else
+					{
+ 		               ma=ma+12;
+ 		               aa=aa-1;
+ 		               m=ma-mn;
+ 	                 }
+	                  a=aa-an;
+	                  cout<<"\t\t\t\t //======================================================//"<<endl;
+	                  cout<<"\t\t\t                  Usted tiene : "<<a<<"  anios "<<m<<" meses y "<<d<< " dias"<<endl;
+	                  cout<<"\t\t\t\t //======================================================//"<<endl;
+                }  
 				system("pause");
 			    system("cls");
 		        break;
@@ -142,7 +191,8 @@ int main(){
 	                archivo<<"Nombre : "<<nombre<<"\n";  
 					archivo<<"Fecha Nacimiento : "<<dn<<"/"<<mn<<"/"<<an<<"\n";  
 					archivo<<"Peso : "<<peso<<"(Kg)"<<"\n";
-					archivo<<"Estatura : "<<altura<<"(Mt)"<<"\n";    					       	                
+					archivo<<"Estatura : "<<altura<<"(Mt)"<<"\n"; 
+					archivo<<"Usted tiene : "<<a<<"  anios "<<m<<" meses y "<<d<< " dias"<<"\n";   					       	                
 	                archivo.close(); //Cerrar el archivo
                   }	               	
                 }

@@ -3,6 +3,53 @@
 using namespace std;
 //FUCION PRINCIPAL
 
+class Persona{
+	
+	private://Atributos
+		int cedula;
+		string nombre;
+		int aa,ma,da,an,mn,dn,a,m,d;
+		float peso;
+		float altura;
+			
+	public: //Metodos
+		Persona(int,string,int,int,int,float,float);//Contructor
+		void leer();
+    	    				 
+};
+//Constructor
+Persona::Persona(int _cedula,string _nombre,int _an,int _mn,int _dn,float _peso,float _altura){
+	cedula = _cedula;
+	nombre = _nombre;
+	an = _an;
+	mn = _mn;
+	dn = _dn;
+	peso = _peso;
+	altura = _altura;   
+}
+
+void Persona::leer(){
+	                
+    system("cls");
+
+    cout<<"\n\n"; 
+    cout<<"\t\t\t\t\t //========================================//"<<endl; 
+	cout<<"\t\t\t\t\t          1.Cedula          :  "<<0<<cedula<<"\n";         
+    cout<<"\t\t\t\t\t          2.Nombre          :  "<<nombre<<"\n";    
+	cout<<"\t\t\t\t\t          3.F_Nacimiento    :  "<<dn<<"/"<<mn<<"/"<<an<<"\n"; 
+	cout<<"\t\t\t\t\t          4.Peso            :  "<<peso<<"(Kg)"<<"\n";          
+	cout<<"\t\t\t\t\t          4.Estatura        :  "<<altura<<"(Mt)"<<"\n"; 
+    cout<<"\t\t\t\t\t //========================================//"<<endl;
+    cout<<"\n";    	
+ 
+}
+
+int cedula;
+string nombre;
+int an,mn,dn;
+float peso;
+float altura;
+
 int main(){	         
     
     int op;
@@ -28,7 +75,32 @@ int main(){
 			case 1:
 				//clrscr
 				system("cls");
-     				
+		
+                 int perona();{
+                    cout<<"\t\t\t\t\t //==============================================//"<<endl; 
+                 	cout<<"\t\t\t\t\t //        1.Ingrese su cedula           :       //"<<endl;                        	
+                 	cout<<"\t\t\t\t\t //        2.Ingrese su Nombre           :       //"<<endl;
+					cout<<"\t\t\t\t\t //        3.Ingrese su Fecha Nacimineto :       //"<<endl;
+					cout<<"\t\t\t\t\t //        4.Ingrese su Peso (Kg)        :       //"<<endl;
+					cout<<"\t\t\t\t\t //        5.Ingrese su Estatura (Mt)    :       //"<<endl;                  	                 	
+                 	cout<<"\t\t\t\t\t //==============================================//"<<"\n";
+                 	cout<<"\t\t1 - ";cin>>cedula;
+                 	cout<<"\n";
+                 	cout<<"\t\t2 - ";cin>>nombre;
+                 	cout<<"\n";
+                 	cout<<"\t\t3 - Dia: ";cin>>dn;
+                 	cout<<"\t\t  - Mes: ";cin>>mn;
+                 	cout<<"\t\t  - Anios ";cin>>an;                
+                 	cout<<"\n"; 
+                 	cout<<"\t\t4 - ";cin>>peso;
+                 	cout<<"\n";				
+                 	cout<<"\t\t5 - ";cin>>altura;
+                 	cout<<"\n";						 	                 	
+                 	system("pause");
+                 	Persona p1 = Persona(cedula,nombre,an,mn,dn,peso,altura);
+                	p1.leer();
+ 
+                 }          				
 				system("pause");
 			    system("cls");
 		        break;

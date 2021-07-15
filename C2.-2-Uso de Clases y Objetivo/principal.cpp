@@ -2,7 +2,8 @@
 #include<stdlib.h>
 #include<fstream>
 using namespace std;
-//FUCION PRINCIPAL
+
+//Class Persona
 
 class Persona{
 	
@@ -16,7 +17,7 @@ class Persona{
 			
 	public: //Metodos
 		Persona(int,string,int,int,int,float,float,float);//Contructor
-		void leer();
+		void ingresar();
     	    				 
 };
 //Constructor
@@ -31,7 +32,7 @@ Persona::Persona(int _cedula,string _nombre,int _an,int _mn,int _dn,float _peso,
 	IMC = _IMC;
 }
 
-void Persona::leer(){
+void Persona::ingresar(){
 	                
     system("cls");
 
@@ -47,6 +48,7 @@ void Persona::leer(){
  
 }
 
+//FUCION PRINCIPAL
 int cedula;
 string nombre;
 int aa,ma,da,an,mn,dn,a,m,d;
@@ -54,13 +56,17 @@ float peso;
 float altura;
 float IMC;
 
-int main(){	         
-    
-    int op;
-    while(op !=6){
+int main()
+{
+	int op,flag;
+
+	do{
+
     	cout<<"\t\t\t\t  //===================================================//"<<endl;
     	cout<<"\t\t\t\t  //                PROGRAMA: Class Persona            //"<<endl;
-    	cout<<"\t\t\t\t  //      AUTOR : Leonardo David Alvarado Cornejo      //"<<endl;
+    	cout<<"\t\t\t\t  //                                                   //"<<endl;
+    	cout<<"\t\t\t\t  //     AUTOR : Leonardo David Alvarado Cornejo       //"<<endl;
+    	cout<<"\t\t\t\t  //                                                   //"<<endl;
     	cout<<"\t\t\t\t  //                    VESION: 1.0                    //"<<endl;
     	cout<<"\t\t\t\t  //===================================================//"<<endl;
     	cout<<"\n\n";
@@ -70,16 +76,16 @@ int main(){
 		cout<<"\t\t      //        3) OPCION.- 3 Mostrar el indice comporal                         //"<<endl;
 		cout<<"\t\t      //        4) OPCION.- 4 Guardar los datos en un archivo .txt               //"<<endl;
 		cout<<"\t\t      //        5) OPCION.- 5 Recuperar los datos desde el archivo .txt          //"<<endl;
-		cout<<"\t\t      //        6) Salir                                                         //"<<endl;
+		cout<<"\t\t      //        0) Salir                                                         //"<<endl;
 		cout<<"\t\t      //=========================================================================//"<<endl;
 		cout<<"\n\n";  
 		cout<<" Digite una Opcion: ";    
-		cin>>op;    		   	
-		switch(op){
-			case 1:
-				//clrscr
-				system("cls");
+		cin>>op; 
 		
+	switch(op){
+		case 1:
+    // Ingresar y mostrar los datos personales 
+		system("cls");		
                  int perona();{
                     cout<<"\t\t\t\t\t //==============================================//"<<endl; 
                  	cout<<"\t\t\t\t\t //        1.Ingrese su Cedula           :       //"<<endl;                        	
@@ -88,30 +94,30 @@ int main(){
 					cout<<"\t\t\t\t\t //        4.Ingrese su Peso (Kg)        :       //"<<endl;
 					cout<<"\t\t\t\t\t //        5.Ingrese su Estatura (Mt)    :       //"<<endl;                  	                 	
                  	cout<<"\t\t\t\t\t //==============================================//"<<"\n";
-                 	cout<<"\t\t1 - ";cin>>cedula;
+                 	cout<<"\t\t1 - C.I. : ";cin>>cedula;
                  	cout<<"\n";
-                 	cout<<"\t\t2 - ";cin>>nombre;
+                 	cout<<"\t\t2 - Nombre : ";cin>>nombre;
                  	cout<<"\n";
                  	cout<<"\t\t3 - Dia: ";cin>>dn;
                  	cout<<"\t\t  - Mes: ";cin>>mn;
                  	cout<<"\t\t  - Anios: ";cin>>an;                
                  	cout<<"\n"; 
-                 	cout<<"\t\t4 - ";cin>>peso;
+                 	cout<<"\t\t4 - Peso (Kg) : ";cin>>peso;
                  	cout<<"\n";				
-                 	cout<<"\t\t5 - ";cin>>altura;
+                 	cout<<"\t\t5 - Estatura (Mt) : ";cin>>altura;
                  	cout<<"\n";						 	                 	
                  	system("pause");
                  	Persona p1 = Persona(cedula,nombre,an,mn,dn,peso,altura,IMC);
-                	p1.leer();
+                	p1.ingresar();
  
-                 }          				
-				system("pause");
-			    system("cls");
-		        break;
-		    
-			case 2:
-				//clrscr
-				system("cls");
+                 }         				
+		system("pause");
+		system("cls");     
+		break;
+	    
+		case 2:
+	// Obtener y Mostrar la edad de la persona 
+		system("cls");
 				int edadd();{
 				
 					cout<<"\n";
@@ -161,15 +167,14 @@ int main(){
 	                  cout<<"\t\t\t\t //======================================================//"<<endl;
 	                  cout<<"\t\t\t                  Usted tiene : "<<a<<"  anios "<<m<<" meses y "<<d<< " dias"<<endl;
 	                  cout<<"\t\t\t\t //======================================================//"<<endl;
-                }  
-				system("pause");
-			    system("cls");
-		        break;
-				
-			case 3:
-				//clrscr
-				system("cls");
-
+                }          				
+		system("pause");
+		system("cls"); 
+		break;
+		
+		case 3:
+	// Mostrar el indice comporal
+		system("cls");
 				int corporal();{
 					
 					cout<<"\n";
@@ -203,14 +208,13 @@ int main(){
 						    }
 					    }
 					} 	         	                					                
-			    }			
-				system("pause");
-			    system("cls");
-		        break;						    
-		    
-			case 4:
-				//clrscr
-				system("cls");
+			    }	        				
+		system("pause");
+		system("cls"); 
+		break;
+		case 4:
+	// Guardar los datos en un archivo .txt
+		system("cls");
                 void escribir();
 
                 int guardar();{
@@ -233,14 +237,14 @@ int main(){
 					archivo<<"Indice Masa Corporal : "<<IMC<<"\n";    					       	                
 	                archivo.close(); //Cerrar el archivo
                   }	               	
-                }
-				system("pause");
-			    system("cls");
-		        break;		    
-
-			case 5:
-				//clrscr
-				system("cls");
+                }        				
+		system("pause");
+		system("cls"); 	
+		break;
+		
+		case 5:
+	// Recuperar los datos desde el archivo .txt 
+		system("cls");
                 void lectura();
 
                 int recuperar();{
@@ -262,22 +266,30 @@ int main(){
 	                }	                
 	                	archivo.close(); // Cerramos el archivo	                
                   }	               	
-                }
-				system("pause");
-			    system("cls");
-		        break;		        
-		    
+                }        				
+		system("pause");
+		system("cls"); 	
+		break;
+
                 default:
-                	if(op < 1||op >6){
+                	if(op < 0||op >5){
                 		system("cls");
                 		cout<<endl<<"Este numero no es valido. . ."<<endl;
                 		cout<<"\n\n";
 						system("pause");
 					    system("cls");
 				    }			
+		
 		}
-			
-	}
-    
-    return 0;
+
+	if(op==0){
+		
+	cout<<"\n\n\tSalimos del Sistema: "<<endl;
+
+	}	
+	
+	}while(op!=0);
+
+	return(0);
+
 }
